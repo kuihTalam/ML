@@ -31,7 +31,7 @@ regressor.fit(X, y)
 # The X need to re-scale back by using sc_X.transform
 # '.transform' has to be in array-form thus np.array is used.
 # 'inverse.transform' is used to transform back
-y_pred = sc_y.inverse_transform(regressor.predict(sc_X.transform(np.array([[6.5]]))))
+y_pred = sc_y.inverse_transform(regressor.predict(sc_X.transform(np.array([[7.1]]))))
 
 
 # Visualising the SVR results
