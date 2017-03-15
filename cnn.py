@@ -19,7 +19,7 @@ classifier.add(Convolution2D(32, 3, 3, input_shape = (64, 64, 3), activation = '
 classifier.add(MaxPooling2D(pool_size = (2, 2)))
 
 # Adding a second convolution layer
-classifier.add(Convolution2D(32, 3, 3, input_shape = (64, 64, 3), activation = 'relu'))
+classifier.add(Convolution2D(32, 3, 3, activation = 'relu')) # input_shape not needed in second layer as keras already knew the shape on the first layer
 
 # Adding a second pooling layer
 classifier.add(MaxPooling2D(pool_size = (2, 2)))
